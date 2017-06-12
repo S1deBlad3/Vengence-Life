@@ -1,0 +1,1 @@
+player addaction ["punch to death","punch.sqf"];
