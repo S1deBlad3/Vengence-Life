@@ -87,14 +87,10 @@ class Mission
 		"castructures_wall",
 		"caweapons_kord",
 		"CAWheeled2_Kamaz",
-		"cacharacters_e",
-		"CACharacters_BAF"
 	};
 	addOnsAuto[]=
 	{
 		"cacharacters2",
-		"cacharacters_e",
-		"CACharacters_BAF",
 		"ca_modules_clouds",
 		"ca_modules_functions",
 		"CASounds",
