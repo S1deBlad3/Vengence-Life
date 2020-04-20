@@ -1,1 +1,0 @@
-['Banana',10] call INV_AddInventoryItem;

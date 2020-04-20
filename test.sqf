@@ -1,2 +1,0 @@
-_player = name vehicle player;
-player groupchat format["%1, Welcome to Marres testing file, a mission made by Marinesharp for -=Tanith First=-, and then readopted by MostChameleon for NSPD use Then to Lancers. Check map tabs for rules and more information. Please wait while map loads.", _player];

@@ -1,1 +1,0 @@
-player setpos getmarkerpos "sobrspawnplc";
