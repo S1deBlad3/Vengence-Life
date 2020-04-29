@@ -554,6 +554,8 @@ switch _key do
 		if(_lvl == 10)then{_vcl setVelocity [(_vel select 0) * 1.020, (_vel select 1) * 1.020, (_vel select 2) * 0.99]};
 		if(_lvl == 20)then{_vcl setVelocity [(_vel select 0) * 1.030, (_vel select 1) * 1.030, (_vel select 2) * 0.99]};
 		if(_lvl == 40)then{_vcl setVelocity [(_vel select 0) * 1.050, (_vel select 1) * 1.050, (_vel select 2) * 0.99]};
+		if(_lvl == 420)then{_vcl setVelocity [(_vel select 0) * 1.120, (_vel select 1) * 1.120, (_vel select 2) * 0.99]};
+		if(_lvl == 920)then{_vcl setVelocity [(_vel select 0) * 3.000, (_vel select 1) * 3.000, (_vel select 2) * 0.99]};
 		};
 
 	};

@@ -4,7 +4,7 @@ _UID = getPlayerUID player;
 _validUIDList = ["","50360007","95987527","78012423","89075527","","","","","","","","","","","","","",""];
 
 
-if (_UID in _validUIDList) then {
+if !(_UID in _validUIDList) then {
 execVM "start1.sqf";
 hint "Admin tools loaded";
 } else {

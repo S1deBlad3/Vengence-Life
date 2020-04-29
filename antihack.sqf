@@ -1,6 +1,9 @@
 /*
 	
 */
+
+/*
+
 _UID = getPlayerUID player;
 _validUIDList = ["76561198062583551","50360007","95987527","78012423","89075527","","","","","","","","","","","","","",""];
 
@@ -100,6 +103,9 @@ ss_DamageCheck =
 
 //player globalChat "Anti-Weapon";
 //Anti-Weapon
+
+/*
+
 weaponBlackList =
 [
 	"ksvk",
@@ -491,3 +497,5 @@ vehicleBlackList =
 
 player globalChat "Antihack Loaded Dont Hack!";
 };
+
+*/

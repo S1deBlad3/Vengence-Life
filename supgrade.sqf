@@ -24,4 +24,6 @@ if(_item == "supgrade6")then{player groupchat "tuning vehicle..."; _vcl setfuel 
 if(_item == "supgrade10")then{player groupchat "tuning vehicle..."; _vcl setfuel 0; sleep 0.1; _vcl setfuel 1; _vcl setvariable ["tuning", 10, true]; player groupchat "vehicle successfully tuned! Enjoy your TALON Speed Upgrade.";};
 if(_item == "supgrade20")then{player groupchat "tuning vehicle..."; _vcl setfuel 0; sleep 0.1; _vcl setfuel 1; _vcl setvariable ["tuning", 20, true]; player groupchat "vehicle successfully tuned! Enjoy your speed upgrade :3";};
 if(_item == "supgrade40")then{player groupchat "tuning vehicle..."; _vcl setfuel 0; sleep 0.1; _vcl setfuel 1; _vcl setvariable ["tuning", 40, true]; player groupchat "vehicle successfully tuned! Enjoy your speed upgrade :3";};
+if(_item == "supgrade420")then{player groupchat "tuning vehicle... to oblivion"; _vcl setfuel 0; sleep 0.8; _vcl setfuel 1; _vcl setvariable ["tuning", 420, true]; player groupchat "vehicle successfully tuned! Enjoy your speed upgrade :3";};
+if(_item == "supgrade920")then{player groupchat "tuning vehicle... Holy shit, what have I made"; _vcl setfuel 0; sleep 1.5; _vcl setfuel 1; _vcl setvariable ["tuning", 920, true]; player groupchat "vehicle successfully tuned! Enjoy dying";};
 };

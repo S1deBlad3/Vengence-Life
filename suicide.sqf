@@ -6,6 +6,16 @@ if (_art == "use") then
 
 _item   = _this select 1;
 _anzahl = _this select 2;
+
+
+
+
+if(_item == "Explosive_Banana") then {
+
+format['server globalChat "Look at this fucking idiot %1 Has Just eaten an explosive banana. You better run.";', name player] call broadcast;
+
+};
+
 "hint localize ""STRS_inv_item_selbstmordbombe_globalmsg"";" call broadcast;
 
 for [{_i=5}, {_i >= 0}, {_i=_i-1}] do 

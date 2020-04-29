@@ -144,6 +144,22 @@ INV_itemstocks =
 //explosive
 -1,
 //ter wep shop
+-1,
+//something
+-1,
+//something
+-1,
+//something
+-1,
+//something
+-1,
+//something
+-1,
+//something
+-1,
+//something
+-1,
+//something
 -1
 
 ];
@@ -294,7 +310,25 @@ INV_itemmaxstocks =
 //explosive
 -1,
 //ter wep shop
+-1,
+//something
+-1,
+//something
+-1,
+//something
+-1,
+//something
+-1,
+//something
+-1,
+//something
+-1,
+//something
+-1,
+//something
 -1
+
+
 ];
 
 // Shop items
@@ -305,11 +339,13 @@ _is = ["Apfel","Apfelkuchen","blowfish", "mackerel", "herring", "bass", "Bread",
 _pub = ["beer","beer2","vodka","smirnoff","wiskey","wine","wine2"];
 _gs = ["M9", "Rnd_9x19_M9", "Colt1911", "Rnd_45ACP_1911", "Saiga12K", "Rnd_B_Saiga12_74Slug", "MP5A5","30Rnd_9x19_MP5","Huntingrifle", "x_22_LR_17_HMR", "MakarovSD", "8Rnd_9x18_MakarovSD"];
 _es = ["Binocular", "NVGoggles", "GPS"];
-_cu = ["nitro", "supgrade1", "supgrade2", "supgrade3", "supgrade4", "supgrade5", "supgrade6"];
+_cu = ["nitro", "supgrade1", "supgrade2", "supgrade3", "supgrade4", "supgrade5", "supgrade6","supgrade40","supgrade420"];
 _af = ["Cheeseburger", "steakfries", "Burrito", "Chips", "Pepsi", "Sprite", "drpepper"];
 _cs = ["MMT_Civ","TT650_Civ","TT650_Ins","HMMWV_Ambulance","HMMWV","Tractor","Skoda","SkodaBlue","SkodaRed","SkodaGreen","Lada_base","Lada2","Car_hatchback","Car_Sedan","VWGolf","Lada1_TK_CIV_EP1","Lada2_TK_CIV_EP1","VolhaLimo_TK_CIV_EP1","Volha_1_TK_CIV_EP1","Volha_2_TK_CIV_EP1","S1203_TK_CIV_EP1"]; 
 _ps = ["datsun1_civil_1_open", "datsun1_civil_2_covered", "hilux1_civil_1_open", "hilux1_civil_2_covered", "UAZ_RU", "HMMWV"];
 _av = ["Pickup_PK_INS", "HMMWV"];
+_tn1 = ["Binocular", "GPS", "NVGoggles", "AK_47_M", "30Rnd_762x39_AK47", "PK", "100Rnd_762x54_PK", "HandGrenade_East", "RPG7V", "PG7V", "Strela", "Strela_mag", "PipeBomb","medikit","kanister","reparaturkit","lighter","strangemeat","selbstmordbombe","zeitzuenderbombe","fernzuenderbombe","aktivierungsbombe","geschwindigkeitsbombe","lockpick","fernzuender"];
+_tn2 = ["Binocular", "GPS", "NVGoggles", "AK_47_M", "30Rnd_762x39_AK47", "PK", "100Rnd_762x54_PK", "HandGrenade_East", "RPG7V", "PG7V", "Strela", "Strela_mag", "PipeBomb","medikit","kanister","reparaturkit","lighter","strangemeat","selbstmordbombe","zeitzuenderbombe","fernzuenderbombe","aktivierungsbombe","geschwindigkeitsbombe","lockpick","fernzuender"];
 _ts = ["Ikarus", "UralCivil", "UralCivil2", "V3S_Civ", "KamazOpen","MTVR","MtvrRepair"];
 _as = ["Mi17_Civilian","Mi17_medevac_CDF","MV22"];
 _mfs = ["F35B"];
@@ -356,11 +392,15 @@ _tdf = ["supgrade10","M2StaticMGT","SearchLightT","Stinger_Pod","D30_CDF","ZU23_
 _black = ["lockpick","M4A1"];
 _Medical = ["meth_ingridients"];
 _Medical2 = ["Illigal_meth_ingridients"];
+_bst1 = ["PBX", "Zodiac", "RHIB"];
 _meth = ["Meth bag","Cheap Meth bag"];
+_copshop_swat1 = ["M4A1_HWS_GL", "M4A1_AIM_SD_camo","30Rnd_556x45_StanagSD","30Rnd_556x45_Stanag","1Rnd_HE_M203","1Rnd_Smoke_M203","FlareRed_M203","M4SPR","20Rnd_556x45_Stanag","M249","200Rnd_556x45_M249","HandGrenade_East","M136","M136_mag","Stinger","Stinger_mag","PipeBomb"];
 _lowend = ["AKS_GOLD","AKS_74_UN_Kobra","AKS74pso","RPK_74","SVD","30Rnd_762x39_AK47","30Rnd_545x39_AK","30Rnd_545x39_AKSD","75Rnd_545x39_RPK","10Rnd_762x54_SVD"];
 _highend = ["AK_107_PSO","AK_107_Kobra","30Rnd_545x39_AK","M4A1","30Rnd_556x45_Stanag","ksvk","5Rnd_127x108_KSVK","m16a4","m8_Carbine","30Rnd_556x45_G36","m8_SAW","100Rnd_556x45_BetaCMag","Explosive_Banana"];
 _explosive = ["selbstmordbombe","zeitzuenderbombe","fernzuenderbombe","aktivierungsbombe","geschwindigkeitsbombe","lockpick","PipeBomb"];
 _twf = ["Binocular", "NVGoggles","GPS","Huntingrifle1","x_22_LR_17_HMR","AK74","AK74GL","AKS74U","AKS74pso","AKS_Gold","30Rnd_545x39_AK","30Rnd_762x39_AK47","1Rnd_HE_GP25","SVD","10Rnd_762x54_SVD","PK","100Rnd_762x54_PK","RPG7V1","PG7V","HandGrenade_East"];
+_tn3 = ["Binocular", "GPS", "NVGoggles", "AK_47_M", "30Rnd_762x39_AK47", "PK", "100Rnd_762x54_PK", "HandGrenade_East", "RPG7V", "PG7V", "Strela", "Strela_mag", "PipeBomb","medikit","kanister","reparaturkit","lighter","strangemeat","selbstmordbombe","zeitzuenderbombe","fernzuenderbombe","aktivierungsbombe","geschwindigkeitsbombe","lockpick","fernzuender"];
+_as2 = ["Mi17_medevac_CDF","Mi17_Civilian","MV22"];
 _copshop = 
 
 [
@@ -482,7 +522,8 @@ _terrorshop =
 "fernzuenderbombe",
 "aktivierungsbombe",
 "geschwindigkeitsbombe",
-"lockpick"
+"lockpick",
+"fernzuender"
  
 ];
 
@@ -508,7 +549,7 @@ _gangshop_buy =
 
 ];
 
-
+_cu1 = ["nitro", "supgrade1", "supgrade2", "supgrade3", "supgrade4", "supgrade5", "supgrade6","supgrade40","supgrade420","supgrade920"];
 
 
 INV_ItemShops = [
@@ -535,6 +576,8 @@ INV_ItemShops = [
 
 [tuning1,"Car Upgrades",dummyobj,dummyobj,_cu,_cu,true],
 [tuning2,"Car Upgrades",dummyobj,dummyobj,_cu,_cu,true],
+[tuning3,"Car Upgrades",dummyobj,dummyobj,_cu1,_cu1,true],
+
 
 [americanfoods,"American Foods",dummyobj,dummyobj,_af,_af,true],
 
@@ -547,7 +590,8 @@ INV_ItemShops = [
 					
 [truckshop,"Truck Shop",dummyobj,truckspawn,_ts,_ts,true],
 
-[airshop,"Air Shop",dummyobj,asairspawn,_as,_as,true],
+[airshop,"Air Shop New And Improved",dummyobj,asairspawn,_as,_as,true],
+[airshop2,"Air Shop",dummyobj,asairspawn2,_as2,_as2,true],
 
 [militaryfightershop,"Military Fighter Shop",dummyobj,asairspawn,_mfs,_mfs,true],
 
@@ -557,9 +601,11 @@ INV_ItemShops = [
 
 [boatshop3, "Boat Shop",dummyobj,boatspawn3,_bs3,_bs3,true],
 
-[tboatshop, "ChDKZ vehicle shop",dummyobj,tboatspawn,_tbs,_tbs,true],
+[tboatshop, "Terrorist vehicle shop",dummyobj,tboatspawn,_tbs,_tbs,true],
 
-[cboatshop,"Boat Shop",dummyobj,cboatspawn,_bc,_bc,true],
+[cboatshop,"Terrorist Boat Shop",dummyobj,cboatspawn,_bc,_bc,true],
+
+[BoatShopTerrorist,"Terrorist Boat Shop",dummyobj,BoatSpawnTerrorist,_bst1,_bst1,true],
 
 [Oil_1,"Mining equipment",dummyobj,dummyobj,_ms,_ms,true],
 
@@ -599,6 +645,7 @@ INV_ItemShops = [
 [coppatrol2,"Patrol-Officer",coppatrol2,dummyobj,_copshop_patrol,_copshop_patrol,true],
 [copcriminal,"Criminal Response (Stun Weps)",copcriminal,dummyobj,_copshop_response,_copshop_response,true],
 [copswat,"SWAT",copswat,dummyobj,_copshop_sobr,_copshop_sobr,true],
+[copswat1,"SWAT Weapons & Equiment",copswat1,dummyobj,_copshop_swat1,_copshop_swat1,true],
 [terrorshop,"Terrorist Shop",tgunbox,dummyobj,_terrorshop,_terrorshop,true],
 [Medical,"Medical Items",dummyobj,dummyobj,_Medical,_emptyshop,true],
 [Medical2,"Illigal Medical Items",dummyobj,dummyobj,_Medical2,_emptyshop,true],
@@ -622,7 +669,9 @@ INV_ItemShops = [
 [garcan," ",dummyobj,dummyobj,_talmon,_talmon,true],
 [landmines,"Police IED Disposal",dummyobj,dummyobj,_emptyshop,_lms,true],
 [talondef,"Donator shop",dummyobj,dummyobj,_tdf,_tdf,true],
-[weaponfactory,"ChDKZ",wfgunbox,dummyobj,_twf,_twf,true]
+[terrorshop1,"Terrorist Shop New And Improved",tgunbox1,dummyobj,_tn1,_tn1,true],
+[terrorshop2,"Terrorist Shop New And Improved",tgunbox2,dummyobj,_tn2,_tn2,true],
+[weaponfactory,"Terrorist Weapons",wfgunbox,dummyobj,_tn3,_tn3,true]
 
 
 

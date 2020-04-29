@@ -221,6 +221,15 @@ switch _item do
 	
     case "Whale1":     { _hungerStillen = 100;  };
 	
+	case "Banana": { _hungerStillen = 30;	};
+	
+	case "Lemon": { _hungerStillen = -5; player groupchat format ["Lemons are sour :( You lost %1 hunger", _hungerStillen];	};
+	
+	case "Orange": { _hungerStillen = 20;	};
+	
+	case "Pinapple": { _hungerStillen = 25;	};
+	
+	
 	};
 
 

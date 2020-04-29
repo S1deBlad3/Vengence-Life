@@ -6,20 +6,26 @@ if (_art == "ausrauben") then
 
 {	
 
+//player setVariable ["bankreserve", 0, true];
+
+banktest = 0;
+publicVariable "banktest";
 call compile format["local_cash = robpool%1", _safe];
+format['[0,1,2,["opfer", %1, %2]] execVM "bankReserve.sqf";', _safe, local_cash] call broadcast;
+local_cash = local_cash + banktest;
+//if(local_cash < 10000)exitwith{player groupchat "This safe has recently been cracked open and contains nothing."}; //Debug
 
-if(local_cash < 10000)exitwith{player groupchat "This safe has recently been cracked open and contains nothing."};
-
-if(!robenable)exitwith{player groupchat "you are already robbing the bank"};
-if(!(call INV_isArmed) and !debug)exitWith{player groupChat localize "STRS_bank_rob_noweapon";};
+if(!robenable)exitwith{player groupchat "you are already robbing the bank"}; //Debug
+//if(!(call INV_isArmed) and !debug)exitWith{player groupChat localize "STRS_bank_rob_noweapon";}; //Debug
 robenable = false;
 call compile format["robpool%1 = 0;publicvariable ""robpool%1"";", _safe];											
 player groupChat format[localize "STRS_bank_rob_info", (robb_money call ISSE_str_IntToStr)];
-
 format['[0,1,2,["opfer", %1, %2]] execVM "bankrob.sqf";', _safe, local_cash] call broadcast;
-
 player playmove "AinvPknlMstpSlayWrflDnon_medic";
 sleep 5;
+
+player groupChat format["bank testing script :  %1", banktest];
+
 waituntil {animationstate player != "AinvPknlMstpSlayWrflDnon_medic"};
 
 if (alive player) then 
@@ -38,7 +44,7 @@ local_useBankPossible = false;
 robenable = true;
 rblock = rblock + ((local_cash/10000)*60);
 _rblock = rblock;
-
+player groupChat format ["You can not use an ATM for %1 minutes", (_rblock / 60)];
 sleep 2;
 
 if(_rblock != rblock)exitwith{};
@@ -58,10 +64,11 @@ if (_art == "opfer") then
 {
 
 _robpool = _this select 2;
+_robpool = _robpool + banktest;
 															
 titleText [localize "STRS_bank_rob_titlemsg", "plain"];
 
-_safe say "Bank_alarm";
+//_safe say "Bank_alarm"; //Debug
 copbase1 say "Police_alarm";
 
 sleep 8;
