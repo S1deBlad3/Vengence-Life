@@ -9,4 +9,4 @@ execVM "start1.sqf";
 hint "Admin tools loaded";
 } else {
 	//server globalchat format["Lancers Admin, You cannot access this. If you think you should, talk to a Lancers admin."];
-};
+}; 

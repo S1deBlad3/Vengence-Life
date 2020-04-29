@@ -79,16 +79,11 @@ class Mission
 		"CAAir2_F35B",
 		"castructures_wall",
 		"caweapons_kord",
-		"CAWheeled2_Kamaz",
-		"cacharacters_e",
-		"CACharacters_BAF",
-		"camisc_e"
+		"CAWheeled2_Kamaz"
 	};
 	addOnsAuto[]=
 	{
 		"cacharacters2",
-		"cacharacters_e",
-		"CACharacters_BAF",
 		"ca_modules_clouds",
 		"ca_modules_functions",
 		"caair",
