@@ -7,14 +7,16 @@ _grp = createGroup west;
 _wp = _grp addWaypoint [getmarkerpos "swatlz", 0];
 [_wp, 0] setwaypointtype "MOVE";
 
-_c130 = "C130J" createVehicle [(position Player select 0) + (random 500), (position Player select 1) + (random 500), 250];
-_c130 setPos [(getPos _c130 select 0) + (_x * 40), getPos _c130 select 1, 250];
+//_c130 = "C130J" createVehicle [(position Player select 0) + (random 100), (position Player select 1) + 250, 500];
+//_c130 setPos [(getPos _c130 select 0) + (_x * 10), (getPos _c130 select 1) + 400, 300];
+_c130 = createVehicle ["C130J", position player, [], 0, "FLY"];
 _c130 engineOn true;
 _c130 setDir 170;
 _dir = 170;
 _speed = 500;
 _c130 setVelocity [(sin _dir * _speed),(cos _dir * _speed), 0];
 _c130 allowdammage false;
+_c130 flyInHeight 300;
 
 _man = "USMC_Soldier" createUnit [position player, _grp, "this moveInDriver _c130; this flyinHeight 250", 1];
 _c130 lock true;

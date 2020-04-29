@@ -78,6 +78,13 @@ if (_art == 3) exitWith
 {
 
 _dauer = round(_this select 1);
+
+format['server globalChat "%1 has been accused of a crime and sentenced to %2 time in jail by the Police officer %3. The Defendent will adress the court shortly.";', _civmenu_civ, _dauer, player] call broadcast;
+
+//waitUntil{[_civmenu_civ, _dauer, player] execVM "courtroom.sqf"};
+
+format ['[%1, %2, %3] execVM "courtroom.sqf"', _civmenu_civ, _dauer, player] call broadcast;
+
 format ["if (player == %1) then {[""arrest"", %2, %3] execVM ""civmenu.sqf"";};", _civmenu_civ, _dauer, player] call broadcast;
 
 player groupChat format[localize "STRS_civmenu_arrested", _civmenu_civ];

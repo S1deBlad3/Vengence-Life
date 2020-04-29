@@ -232,10 +232,15 @@ _role addaction ["Process Meth Bag","itemprocess.sqf",["meth_ingridients", "Meth
 _role addaction ["Process Cheap Meth Bag","itemprocess.sqf",["Illigal_meth_ingridients", "Cheap Meth bag", 1, "civlicense"],1,false,true,"","player distance cooking <= 5"];
 _role addaction ["Process Oil","itemprocess.sqf",["Oil", "OilBarrel", 10, "oil"],1,false,true,"","player distance Oil_1 <= 5"];
 _role addaction ["Make some Caviar","itemprocess.sqf",["Stoer", "Kaviar", 1, "kaviar"],1,false,true,"","player distance Kaviafabrik <= 5"];
-_role addaction ["Process LSD","itemprocess.sqf",["Unprocessed_LSD", "lsd", 5, "civlicense"],1,false,true,"","player distance drugs <= 5"];
-_role addaction ["Process Cocaine","itemprocess.sqf",["Unprocessed_Cocaine", "cocaine", 5, "civlicense"],1,false,true,"","player distance drugs <= 5"];
-_role addaction ["Process Heroin","itemprocess.sqf",["Unprocessed_Heroin", "heroin", 5, "civlicense"],1,false,true,"","player distance drugs <= 5"];
-_role addaction ["Process Marijuana","itemprocess.sqf",["Unprocessed_Marijuana", "marijuana", 5, "civlicense"],1,false,true,"","player distance drugs <= 5"];
+
+_role addaction ["Process LSD","itemprocess.sqf",["Unprocessed_LSD", "lsd", 5, "lsd ga1"],1,false,true,"","_control = gangarea1 getvariable ""control"";!isnil ""_control"" and player distance gangarea1 <= 5 and (_control == (call INV_mygang))"];
+_role addaction ["Process Cocaine","itemprocess.sqf",["Unprocessed_Cocaine", "cocaine", 5, "cocaine ga1"],1,false,true,"","_control = gangarea1 getvariable ""control"";!isnil ""_control"" and player distance gangarea1 <= 5 and (_control == (call INV_mygang))"];
+//ga2
+_role addaction ["Process LSD","itemprocess.sqf",["Unprocessed_LSD", "lsd", 5, "lsd ga2"],1,false,true,"","_control = gangarea2 getvariable ""control"";!isnil ""_control"" and player distance gangarea2 <= 5 and (_control == (call INV_mygang))"];
+_role addaction ["Process Heroin","itemprocess.sqf",["Unprocessed_Heroin", "heroin", 5, "heroin ga2"],1,false,true,"","_control = gangarea2 getvariable ""control"";!isnil ""_control"" and player distance gangarea2 <= 5 and (_control == (call INV_mygang))"];
+//ga3
+_role addaction ["Process Heroin","itemprocess.sqf",["Unprocessed_Heroin", "heroin", 5, "heroin ga3"],1,false,true,"","_control = gangarea3 getvariable ""control"";!isnil ""_control"" and player distance gangarea3 <= 5 and (_control == (call INV_mygang))"];
+_role addaction ["Process Marijuana","itemprocess.sqf",["Unprocessed_Marijuana", "marijuana", 5, "marijuana ga3"],1,false,true,"","_control = gangarea3 getvariable ""control"";!isnil ""_control"" and player distance gangarea3 <= 5 and (_control == (call INV_mygang))"];
 
 //ga1
 //_role addaction ["Process LSD","itemprocess.sqf",["Unprocessed_LSD", "lsd", 5, "lsd ga1"],1,false,true,"","_control = gangarea1 getvariable ""control"";!isnil ""_control"" and player distance gangarea1 <= 5 and (_control == (call INV_mygang))"];
@@ -335,7 +340,9 @@ _af = americanfoods addaction ["Rob American food","robthestations.sqf",["Americ
 _role addaction ["Unflip vehicle","unflipvehicle.sqf",["unflip"],1,false,true,"",'_vcl = (nearestobjects [getpos player, ["Air", "Ship", "LandVehicle"], 3] select 0);player distance _vcl < 5 and _vcl in INV_VehicleArray'];
 
 
-
+//From TheGreatStep
+_role addaction ["To Electro", "TheGreatStep\helicopter.sqf", [], 1.5, false, true, "", "player distance TourHeli_1 < 15"];
+_role addaction ["To Cherno", "TheGreatStep\helicopter_2.sqf", [], 1.5, false, true, "", "player distance TourHeli_2 < 15"];
 
 
 

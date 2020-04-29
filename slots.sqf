@@ -1,3 +1,6 @@
+
+/*
+
 waitUntil {!isNull player};
 waitUntil {(vehicle player) == player};
 waitUntil {(getPlayerUID player) != ""};
@@ -7,8 +10,11 @@ reserved_uids = ["243956422","168950470","144225158","166951942","78012423"];
 
 _uid = getPlayerUId player;
 
-if ((player in reserved_units)&& !(_uid in reserved_uids)) then {
+if !((player in reserved_units)&& !(_uid in reserved_uids)) then {
    player groupChat "You are in a private slot, kicking to lobby in 5 seconds";
    sleep 5;
    failMission "end1";
  };
+ 
+ 
+ */

@@ -4,8 +4,14 @@ _uid = getPlayerUID player;
 _walking = isWalking player;
 //_form = format ["player:%1", _x];
 lbAdd [1500, format ["player: %1 - Guid: %2 - Walking: %3 - Vcl: %4 - Bank: %5 - Inv: %6 - Gun: %7", name _x, _uid, _walking, if(vehicle _x != _x) then {typeOf (vehicle _x)} else {"No Vcl"}, _x getVariable "bankMoney", _x getVariable "moneyPlayer", weapons _x]]; forEach playableUnits;
-lbSetCurSel [1500,0];
 
+for [{_i=0}, {_i < (count playerarray)}, {_i=_i+1}] do 
+	{
+		_spieler = playerarray select _i;
+		lbAdd[1500, format["%1"], _spieler];
+	};
+
+lbSetCurSel [1500,0];
 
 hint "upp and running";
 

@@ -327,6 +327,7 @@ INV_FarmItemArray =
 [[["farmarea3",70]],"getreide",20,40,["tractor"]],
 [[["apfelfeld",70]],"Apfel",20,15,["Man"]],
 [[["BananaField",50]],"Banana",20,15,["Man"]],
+[[["BananaField_1",50]],"Explosive_Banana",10,11,["Man"]],
 [[["lemonfield",50]],"Lemon",20,15,["Man"]],
 [[["orangefield",50]],"Orange",20,15,["Man"]],
 [[["pinapplefield",50]],"Pinapple",20,15,["Man"]],

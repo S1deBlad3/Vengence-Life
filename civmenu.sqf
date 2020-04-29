@@ -133,6 +133,8 @@ if (_civkopfgeld != 0) then
 
 	};
 
+
+
 (format ["server GLOBALCHAT format [localize ""STRS_civmenucheck_arrested_global"", name %1, name %3, %2]; [""PrisonIn"", %1, %3] spawn Isse_AddCrimeLogEntry; kopfgeld_%1 = (%2*10000);%1_wanted = 0;%1_arrest = 1;", player, ((_prisondauer/60) call ISSE_str_IntToStr), _copobj]) call broadcast;																	
 
 player setpos getmarkerpos "prisonspawn";

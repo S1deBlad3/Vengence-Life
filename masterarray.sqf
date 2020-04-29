@@ -670,11 +670,15 @@ INV_AlleItemsArray = [
 
 ["supgrade6",["Item", "carobjects"],["nitro", "Speed Upgrade 6"], [70000, 55000], [5, "engineer", "patrol_training"],[true,true,true, false, "supgrade.sqf"], "Speed Upgrade 6",localize "STRS_inv_item_supgrade_info", [["stahl", 1],["ebauteile", 1],["plastik", 1],["erdoel", 10]]],
 
-["supgrade10",["Item", "carobjects"],["nitro", "Speed Upgrade 10"], [50000, 25000], [5, "TV", "TV"],[true,true,true, false, "supgrade.sqf"], "Speed Upgrade 10",localize "STRS_inv_item_supgrade_info", [["stahl", 1],["ebauteile", 1],["plastik", 1],["erdoel", 10]]],
+["supgrade10",["Item", "carobjects"],["nitro", "Speed Upgrade 10"], [50000, 25000], [5, "engineer", "engineer"],[true,true,true, false, "supgrade.sqf"], "Speed Upgrade 10",localize "STRS_inv_item_supgrade_info", [["stahl", 1],["ebauteile", 1],["plastik", 1],["erdoel", 10]]],
 
-["supgrade20",["Item", "carobjects"],["nitro", "Speed Upgrade 20"], [50000, 25000], [5, "TV", "TV"],[true,true,true, false, "supgrade.sqf"], "Speed Upgrade 20",localize "STRS_inv_item_supgrade_info", [["stahl", 1],["ebauteile", 1],["plastik", 1],["erdoel", 10]]],
+["supgrade20",["Item", "carobjects"],["nitro", "Speed Upgrade 20"], [50000, 25000], [5, "engineer", "engineer"],[true,true,true, false, "supgrade.sqf"], "Speed Upgrade 20",localize "STRS_inv_item_supgrade_info", [["stahl", 1],["ebauteile", 1],["plastik", 1],["erdoel", 10]]],
 
-["supgrade40",["Item", "carobjects"],["nitro", "Speed Upgrade 40"], [50000, 25000], [5, "TV", "TV"],[true,true,true, false, "supgrade.sqf"], "Speed Upgrade 40",localize "STRS_inv_item_supgrade_info", [["stahl", 1],["ebauteile", 1],["plastik", 1],["erdoel", 10]]],
+["supgrade40",["Item", "carobjects"],["nitro", "Speed Upgrade 40"], [50000, 25000], [5, "engineer", "engineer"],[true,true,true, false, "supgrade.sqf"], "Speed Upgrade 40",localize "STRS_inv_item_supgrade_info", [["stahl", 1],["ebauteile", 1],["plastik", 1],["erdoel", 10]]],
+
+["supgrade420",["Item", "carobjects"],["nitro", "Speed Upgrade 420 this will destroy the game"], [50000, 25000], [5, "engineer", "engineer"],[true,true,true, false, "supgrade.sqf"], "Speed Upgrade 420",localize "STRS_inv_item_supgrade_info", [["stahl", 1],["ebauteile", 1],["plastik", 1],["erdoel", 10]]],
+
+["supgrade920",["Item", "carobjects"],["nitro", "Speed Upgrade 920 is a really experimental drug"], [50000, 25000], [5, "engineer", "engineer"],[true,true,true, false, "supgrade.sqf"], "Speed Upgrade 920",localize "STRS_inv_item_supgrade_info", [["stahl", 1],["ebauteile", 1],["plastik", 1],["erdoel", 10]]],
 
 ["House",["Item", "misc"],["House", "House"],[800000, 400000], [60, ""], [false, true, false,false,"house.sqf"],localize "STRS_item_hideout",localize "STRS_item_hideout_info", [] ],
 
