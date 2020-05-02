@@ -30,7 +30,7 @@ INV_Lizenzen =
 ["air_support_training",copbank,localize "STRS_license_copairsupport",100000],
 //["medic",university,localize "STRS_license_medic",5000]
 ["falseFighter",Tairshop,"False Fighter Jet Permit",1000000],
-["terror",terrorshop,"Terrorist training",250000],
+["terror",terrorshop1,"Terrorist training",250000],
 ["terror",weaponfactory,"Terrorist training",250000],
 ["terrorVeh",Tairshop,"Terrorist Vehicle Training",1000000],
 //["civlicense",Nope,"Nope",10],
