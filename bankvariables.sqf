@@ -7,7 +7,7 @@ ShopRaubKontovershop     = 0;
 ShopRaubProzentVershop   = 0;
 rblock			 = 400;
 stolencash		 = 0;
-Maxbankrobpercentlost    = 0.01; 
+Maxbankrobpercentlost    = 0.08; 
 bank_steuer              = 5;     
 zinsen_prozent           = 1.5;   
 //player setVariable ["bankreserve", 50, true];

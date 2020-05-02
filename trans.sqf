@@ -16,7 +16,7 @@ _dir = 170;
 _speed = 500;
 _c130 setVelocity [(sin _dir * _speed),(cos _dir * _speed), 0];
 _c130 allowdammage false;
-_c130 flyInHeight 300;
+_c130 flyInHeight 500;
 
 _man = "USMC_Soldier" createUnit [position player, _grp, "this moveInDriver _c130; this flyinHeight 250", 1];
 _c130 lock true;
@@ -32,6 +32,10 @@ else
 	player moveInCargo [_c130, 1];
 	player commandChat "Welcome aboard. Please sit tight, we will be in cherno in no time. I will eject you once we get to the LZ. All you have to do is enjoy the flight.";
 };
+
+
+sleep 28;
+_c130 flyInHeight 150;
 
 while {!_ejected} do
 {

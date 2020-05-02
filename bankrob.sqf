@@ -44,7 +44,7 @@ local_useBankPossible = false;
 robenable = true;
 rblock = rblock + ((local_cash/10000)*60);
 _rblock = rblock;
-player groupChat format ["You can not use an ATM for %1 minutes", (_rblock / 60)];
+[rblock, _rblock] execVM "bankTimer.sqf";
 sleep 2;
 
 if(_rblock != rblock)exitwith{};
@@ -68,7 +68,7 @@ _robpool = _robpool + banktest;
 															
 titleText [localize "STRS_bank_rob_titlemsg", "plain"];
 
-//_safe say "Bank_alarm"; //Debug
+_safe say "Bank_alarm"; //Debug
 copbase1 say "Police_alarm";
 
 sleep 8;

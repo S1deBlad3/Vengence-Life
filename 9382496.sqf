@@ -25,4 +25,3 @@ _t = [];
 _text = _t;
 
 "Welcome to Alpha 1.0!" hintC _text;
-// 
