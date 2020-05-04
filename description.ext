@@ -49,6 +49,8 @@ sounds[] = {};
 
 #include "bank.hpp"
 
+#include "Court.hpp"
+
 #include "2085272.hpp"
 
 #include "4461230.hpp"

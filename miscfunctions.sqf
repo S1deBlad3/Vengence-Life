@@ -112,6 +112,20 @@ if (_this) then
 };
 
 
+TurnJudgeFunc = 
+
+{
+
+if (_this) then 
+ 
+	{
+
+    	format["civ%1_judge = 1;", rolenumber] call broadcast;
+  
+	} else {format["civ%1_judge = 0;", rolenumber] call broadcast;};
+
+};
+
 TurnBountyFunc = 
 
 {

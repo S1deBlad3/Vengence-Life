@@ -9,6 +9,7 @@ INV_Lizenzen =
 //["pick-up",university,localize "STRS_licence_pick-up",25000],
 ["boat",university,localize "STRS_license_boat",5000],
 ["truck",university,localize "STRS_license_truck",15000],
+//["Judge",govjobs,"The Judge Of Chernarus",35000],
 ["diamond",Diamond_1,"Diamond processor's license",25000],
 ["Baker",Bakery_1,"Baker's license",10000],
 ["oil",Oil_1,"Oil processor's license",35000],

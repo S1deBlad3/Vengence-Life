@@ -79,15 +79,51 @@ if (_art == 3) exitWith
 
 _dauer = round(_this select 1);
 
-format['server globalChat "%1 has been accused of a crime and sentenced to %2 time in jail by the Police officer %3. The Defendent will adress the court shortly.";', _civmenu_civ, _dauer, player] call broadcast;
+//format['server globalChat "%1 has been accused of a crime and sentenced to %2 time in jail by the Police officer %3. The Defendent will adress the court shortly.";', _civmenu_civ, _dauer, player] call broadcast;
 
 //waitUntil{[_civmenu_civ, _dauer, player] execVM "courtroom.sqf"};
 
 format ['[%1, %2, %3] execVM "courtroom.sqf"', _civmenu_civ, _dauer, player] call broadcast;
 
+
+courtDecide = 0;
+loop = 1;
+
+
+scopeName "decide";
+while {loop == 1} do {
+
+if (courtDecide == 1) then {
+
+
+//player groupChat "Hey";
+format['server globalChat "%1 has been accused of a crime and sentenced to %2 time in jail by the Police officer %3. The Defendent will adress the court shortly.";', _civmenu_civ, _dauer, player] call broadcast;
+[_civmenu_civ, _dauer, player] execVM "courtroom1.sqf";
+breakto "endofloop";
+};
+
+if (courtDecide == 2) then {
+
+
+//player groupChat "Hey this works";
+loop = 0;
+
+};
+
+
+//hint "Loop";
+
+sleep 1;
+
+};
+
+
+
 format ["if (player == %1) then {[""arrest"", %2, %3] execVM ""civmenu.sqf"";};", _civmenu_civ, _dauer, player] call broadcast;
 
-player groupChat format[localize "STRS_civmenu_arrested", _civmenu_civ];
+//player groupChat format[localize "STRS_civmenu_arrested", _civmenu_civ];
+
+scopeName "endofloop";
 
 };
 

@@ -7,15 +7,13 @@ if (_art == "ClientWahl") then
 {
 
 if (isNil("WahlSperre")) then {WahlSperre = false;};															
-
-//player groupChat format ["%1", _art];
 	
 if (WahlSperre) exitWith {player groupChat "You just voted.";};				
-_spielernum   = call compile (_this select 1);	format["if (isServer) then {[0,1,2,[""ServerWahl"", %1, %2]] execVM ""mayor.sqf"";};", _spielernum, rolenumber] call broadcast;										
+_spielernum   = call compile (_this select 1);	format["if (isServer) then {[0,1,2,[""ServerWahl"", %1, %2]] execVM ""Judge.sqf"";};", _spielernum, rolenumber] call broadcast;										
 player groupChat format[localize "STRS_regierung_votedfor", (playerstringarray select _spielernum)];									
 	
 WahlSperre = true;														
-sleep 30;		//Debug
+sleep 30;	//Debug	
 WahlSperre = false;
 
 };
@@ -23,7 +21,9 @@ WahlSperre = false;
 if (_art == "ServerWahl") then 
 
 {
-//player groupChat format ["%1", _art];
+
+//hint "this is nice Marre";
+
 _kandidatnum = (_this select 1);     															
 _waehlernum  = ((_this select 2)-1); 													
 	
@@ -44,12 +44,13 @@ if (_art == "serverloop") then
 
 {	
 
-_currentMayor = -1;												
+_currentJudge = -1;												
+	
 while {true} do 
 
 	{
 																																																															
-	for [{_i=0}, {_i < 5}, {_i=_i+1}] do //Debug
+	for [{_i=0}, {_i < 2}, {_i=_i+1}] do 
 
 		{	
 																																									
@@ -65,8 +66,8 @@ while {true} do
 
 		};																																																
 
-	_MaxStimmen = 1;	//debug																	
-	_MaxPos     = -1; //Debug												
+	_MaxStimmen = 1;																		
+	_MaxPos     = -1;	//Debug											
 
 	for [{_i=0}, {_i < count(WahlArray)}, {_i=_i+1}] do 
 
@@ -87,28 +88,28 @@ while {true} do
 
 		{
 																																				
-		"hint localize ""STRS_regierung_nomajor"";" call broadcast;																					
-		_currentMayor = -1;																		
+		"hint localize ""STRS_regierung_nojudge"";" call broadcast;																					
+		_currentJudge = -1;																		
 		
 		} else {
 																																																																		
-		if (_currentMayor == _MaxPos) then 
+		if (_currentJudge == _MaxPos) then 
 
 			{
 																																												
-			"hint localize ""STRS_regierung_majorstays"";" call broadcast;																																										
+			"hint localize ""STRS_regierung_judgestays"";" call broadcast;																																										
 
 			} else {																																				
 
-			_currentMayor = _MaxPos;																																																				
-			_MayorString  = (playerstringarray select _currentMayor);																																																				
-			format["hint format[localize ""STRS_mayor_new"", ""%3"", %2]; if ((rolenumber-1) == %1) then {isMayor = true; true call TurnMayorFunc;} else {isMayor = false;false call TurnMayorFunc;};", _MaxPos, _MaxStimmen, _MayorString] call broadcast;		
+			_currentJudge = _MaxPos;																																																				
+			_MayorString  = (playerstringarray select _currentJudge);																																																				
+			format["hint format[localize ""STRS_judge_new"", ""%3"", %2]; if ((rolenumber-1) == %1) then {isJudge = true; true call TurnJudgeFunc;} else {isJudge = false;false call TurnJudgeFunc;};", _MaxPos, _MaxStimmen, _MayorString] call broadcast;		
 			};		
 
 		};	
 
-	MayorNumber = _currentMayor;												
-	PUBLICVARIABLE "MayorNumber";			
+	JudgeNumber = _currentJudge;												
+	PUBLICVARIABLE "JudgeNumber";			
 
 	};
 

@@ -107,6 +107,7 @@ if (_art == "add") then
 		player groupChat "You are now a Medical Police Officer and get bigger paychecks as well as the ability (if you scroll the mouse wheel) to make a medkit anywhere for 4k. Check map tabs for more information.";
 		player addaction ["Make Medkit ($5,000)","makeMedkitp.sqf",[],717];
 	};
+	
 
 	['geld', -(_cost)] call INV_AddInventoryItem;
 	player groupChat format[localize "STRS_inv_buylicense_gottraining", (_cost call ISSE_str_IntToStr), _name];

@@ -172,6 +172,14 @@ if (_art == "spielerliste") then
 	{
 		lbAdd [1, (playerstringarray select chiefNumber)];
 	};
+	lbAdd [1, _trennlinie];
+	lbAdd [1, localize "STRS_statdialog_judge"];
+	
+	if (not(JudgeNumber == -1)) then 
+	{
+		lbAdd [1, (playerstringarray select JudgeNumber)];
+	};
+	
 if(iscop)then{
 	lbAdd [1, _trennlinie];
 		
@@ -416,6 +424,12 @@ if (_art == "wahlen") then
 if (_art == "chief") then 
 {
 	if (!(createDialog "chiefdialog")) exitWith {hint "Dialog Error!";};
+	_arrayc = [0, 1, true, false] call DialogSpielerListe;
+	lbSetCurSel [1, _arrayc select 1];
+};
+if (_art == "VoteJudge") then 
+{
+	if (!(createDialog "JudgeVote")) exitWith {hint "Dialog Error!";};
 	_arrayc = [0, 1, true, false] call DialogSpielerListe;
 	lbSetCurSel [1, _arrayc select 1];
 };
