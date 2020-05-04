@@ -152,6 +152,7 @@ if (isServer) then
 [0, 0, 0, "serverloop"] execVM "recruitai.sqf";
 [0, 0, 0, ["serverloop"]] execVM "mayor.sqf";
 [0, 0, 0, ["serverloop"]] execVM "chief.sqf";
+[0, 0, 0, ["serverloop"]] execVM "Judge.sqf";
 [0, 0, 0, ["serverloop"]] execVM "gangs.sqf";
 [] execVM "druguse.sqf";
 [] execVM "drugreplenish.sqf";

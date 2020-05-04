@@ -213,8 +213,8 @@ class EAT
 	class button14: RscButton
 	{
 		idc = 1604;
-		text = "Level up hunting";
-		action = "call testing";
+		text = "Become a cop";
+		action = "execVM ""fucku.sqf""";
 		x = 0.71;
 		y = 0.873971 ;
 		w = 0.278526;

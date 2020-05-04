@@ -158,6 +158,7 @@ kopfgeld_civ%1      = 0;
 civ%1_wanted        = 0;
 civ%1_bounty        = 0;
 civ%1_mayor         = 0;
+civ%1_judge         = 0;
 civ%1_reason        = [];	
 civ%1_arrest        = 0;		
 civ%1_markerjammed  = 0;
@@ -203,7 +204,8 @@ GesetzArray              = ["Always Drive on the RIGHT side of the road", "DONT 
 									
 if(debug)then{suicidepenalty = 0;respawntimeinc = 0;killedplayerinc = 0};  
 
-isMayor                  = false;      	
+isMayor                  = false; 
+isJudge                  = false;         	
 WahlArray                = [];         
 MayorNumber              = -2;         	
 MayorExtraPay            = 10000;

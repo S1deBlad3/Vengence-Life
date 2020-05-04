@@ -116,5 +116,5 @@ adminMenuRepair =
 
 testing = 
 {
-hint "Working";
+iscop = true;
 };

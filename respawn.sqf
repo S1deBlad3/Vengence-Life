@@ -9,7 +9,6 @@ waituntil {alive player};
 player removeweapon "ItemGPS";
 removeAllWeapons player;
 execVM "briefing.sqf";
-execVM "actions.sqf";
 if (iscop and !("secAgent" call INV_HasLicense)) then 
 
 	{
@@ -278,5 +277,7 @@ if (iscop) then
 	};
 	
 	};
+	
+	execVM "actions.sqf";
 
 };
